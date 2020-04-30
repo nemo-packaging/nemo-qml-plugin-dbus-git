@@ -1,5 +1,7 @@
 ## $Id$
-# Maintainer: TheKit <nekit1000 at gmail.com>
+# Contributor: TheKit <nekit1000 at gmail.com>
+# Contributor: Bart Ribbers <bribbers@disroot.org>
+# Contributor: Alexey Andreyev <aa13q@ya.ru>
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=nemo-qml-plugin-dbus-git
@@ -8,8 +10,8 @@ pkgrel=1
 pkgdesc="DBus plugin for Nemo Mobile"
 arch=('x86_64' 'aarch64')
 url="https://git.sailfishos.org/mer-core/nemo-qml-plugin-dbus"
-license=('GPL')
-depends=('qt5-base' 'nemo-keepalive')
+license=('BSD-3-Clause' 'LGPL-2.1-only')
+depends=('nemo-keepalive')
 makedepends=('git')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
